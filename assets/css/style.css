@@ -11,12 +11,12 @@
 }
 
 body {
-    display: flex;
+    /* display: flex; */
     width: 100vw;
     height: 100vh;
     position: relative;
     background-color: hsl(0, 0%, 12%);
-    overflow: hidden;
+    /* overflow: hidden; */
     font-family: 'Cubano', cursive;
 }
 .left{
@@ -48,33 +48,28 @@ body {
 
 }
 
-.menu a{
+.start{
     font-size: 2.5rem;
     line-height: 5rem;
-    color: hsl(0, 0%, 80%);
+    color: hsl(0, 0%, 60%);
     padding: 5px;
     border-radius: 20px;
+    animation: blink 2s infinite alternate;
 }
 
-a.start:hover{
-    letter-spacing: .4rem;
-    color: hsl(0, 0%, 100%);
-    font-size: 3rem;
-    transition: .4s ease-in-out;
-}
-
-a.howto:hover{
-    letter-spacing: .4rem;
-    color: hsl(0, 0%, 100%);
-    font-size: 3rem;
-    transition: .4s ease-in-out;
+@keyframes blink {
+    0%{
+        color: hsl(0, 0%, 60%);
+    }
+    100%{
+        color: hsl(0, 0%, 100%);
+    }
 }
 
 .right {
     display: flex;
     
 }
-
 
 .right img{
     position: absolute;
@@ -91,4 +86,19 @@ a.howto:hover{
     top: 1.5rem;
     width: 48rem;
     right: -2rem;
+}
+
+/* .scroll1{
+    display: flex;
+} */
+.story1{
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    height: 100vh;
+}
+
+.story1-1{
+    width: 50%;
+    z-index: 1000;
 }
