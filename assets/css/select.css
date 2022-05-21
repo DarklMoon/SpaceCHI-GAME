@@ -1,5 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
+    position: relative;
+    background-image: url(/assets/image/blackwhite/spacestar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #282828;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    /* height: 30vh; */
+}
+
+.rocketload{
+    width: 20%;
+    position: absolute;
+    top: 30vh;
+    left: 40vw;
+    /* transition: 3s ease-in; */
+    animation: load 1s linear infinite;
+
+}
+
+@keyframes load{
+    0% {
+        transform: rotate(90deg) translate3d(0px, 0px, 0);
+      }
+      50% {
+        transform: rotate(90deg) translate3d(-2px, -4px, 0);
+      }
+      100% {
+        transform: rotate(90deg) translate3d(0px, 0px, 0);
+      }
 }
 
 .world {
@@ -9,15 +53,24 @@ body {
 .world-absolute {
     position: fixed;
     top: 70vh;
-    overflow: hidden;
+    opacity: 0;
+    animation: world 4s 26s linear forwards;
 }
 
 .rocket {
     transform: translate(-300px, 360px) rotate(80deg);
     position: absolute;
-    animation: rocketmove 4s 0s linear forwards;
+    animation: rocketmove 4s 30s linear forwards;
 }
 
+@keyframes world {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 @keyframes rocketmove {
     0% {
         transform: translate(-300px, 360px) rotate(80deg);
