@@ -250,6 +250,8 @@ section{
     align-items: center;
     color: white;
     padding: 1rem;
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
 }
 
 #special{
@@ -263,6 +265,7 @@ section{
     align-items: center;
     font-size: 3rem;
     color: white;
+    padding: 0px 0px 100px 0px;
 }
 
 .globe{
@@ -284,7 +287,7 @@ svg{
 }
 
 #arrow1{
-    animation: warp 3s ease-in-out infinite 0.15s;
+    animation: warp 3s ease-in-out infinite 0.02s;
 }
 
 #arrow2{
