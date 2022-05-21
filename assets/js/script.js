@@ -8,3 +8,7 @@ function parallax(e){
         shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
     })
 }
+
+window.onscroll = function (){
+  console.log(window.scrollY)
+}
