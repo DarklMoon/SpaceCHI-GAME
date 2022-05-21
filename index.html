@@ -9,28 +9,64 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <div class="left">
-        <div class="title">
-            <h1>SEARCH - CHI</h1>
-            <div class="menu">
-                <p class="start">SCROLL DOWN TO START</p>
-                <!-- <svg viewBox="0 0 50 50"> //make scroll sign
-                    <path d="M0,0 l0,-10 " stroke="white"></path>
-                </svg> -->
+    <section class="parallaxes">
+        <div class="left">
+            <div class="title">
+                <h1>SEARCH - CHI</h1>
+                <div class="menu">
+                    <p class="start">SCROLL DOWN TO START</p>
+                    <!-- <svg viewBox="0 0 50 50"> //make scroll sign
+                        <path d="M0,0 l0,-10 " stroke="white"></path>
+                    </svg> -->
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="right">
-        <img src="/assets/image/star1.png" alt="star1" class="star">
-        <img src="/assets/image/globe1.png" alt="globe1" class="globe">
-    </div>
-
-    <div data-aos="fade-up" class="scroll1">
-        <div class="story1">
-            <img src="/assets/image/strory1/strory1-1.png" alt="story1-1" class="story1-1">
+        <div class="right">
+            <img src="/assets/image/star1.png" alt="star1" class="star">
+            <img src="/assets/image/globe1.png" alt="globe1" class="globe">
         </div>
+    </section>
+   
+    <section class="contexnt-wrapper">
+        <div class="container">
+           <div data-aos="fade-down" class="story1">
+               <img src="/assets/image/story1/strory1-1.png" alt="story1-1" class="story1-1" id="a" value="2">
+               <img src="/assets/image/story1/strory1-2.png" alt="story1-2" class="story1-2" id="a" value="-2"> 
+               <img src="/assets/image/story1/strory1-3.png" alt="story1-3" class="story1-3" id="a" value="2">
+               <img src="/assets/image/story1/strory1-4.png" alt="story1-4" class="story1-4" id="a" value="-2">
+           </div>
 
-    </div>
+           <div class="content1">
+               <p>สวัสดีวันเสาร์...</p>
+           </div>
+
+           <div data-aos="fade-up" class="story2">
+               <img src="/assets/image/story2/strory2-1.png" alt="story2-1" class="story2-1" id="a" value="1">
+               <img src="/assets/image/story2/strory2-2.png" alt="story2-2" class="story2-2" id="a" value="-1">
+               <img src="/assets/image/story2/strory2-3.png" alt="story2-3" class="story2-3" id="a" value="1">
+               <img src="/assets/image/story2/strory2-4.png" alt="story2-4" class="story2-4" id="a" value="-1">
+           </div>
+
+           <div data-aos="fade-right" class="story3">
+               <img src="/assets/image/story3/strory3-1.png" alt="story3-1" class="story3-1" id="a" value="1">
+               <img src="/assets/image/story3/strory3-2.png" alt="story3-2" class="story3-2" id="a" value="-1">
+               <img src="/assets/image/story3/strory3-3.png" alt="story3-3" class="story3-3" id="a" value="1">
+               <img src="/assets/image/story3/strory3-4.png" alt="story3-4" class="story3-4" id="a" value="-1">
+           </div>
+
+           <div data-aos="fade-up-left" class="story4">
+                   <img src="/assets/image/story4/strory4-1.png" alt="story4-1" class="story4-1">
+                   <img src="/assets/image/story4/strory4-2.png" alt="story4-2" class="story4-2">
+                   <img src="/assets/image/story4/strory4-3.png" alt="story4-3" class="story4-3">
+           </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="assets/js/script.js"> </script>
 </body>
+
 </html>

@@ -18,6 +18,10 @@ body {
     background-color: hsl(0, 0%, 12%);
     /* overflow: hidden; */
     font-family: 'Cubano', cursive;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* transform-style: preserve-3d; */
+    perspective: 5px;
 }
 .left{
     display: flex;
@@ -88,10 +92,9 @@ body {
     right: -2rem;
 }
 
-/* .scroll1{
-    display: flex;
-} */
 .story1{
+    display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     margin: 3rem;
@@ -99,6 +102,159 @@ body {
 }
 
 .story1-1{
+    position: absolute;
+    left: 5rem;
+    top: 5rem;
+    width: 25%;
+}
+
+.story1-2{
+    position: absolute;
+    left: 11rem;
+    top: 1rem;
+    width: 40%;
+}
+
+.story1-3{
+    position: absolute;
+    left: 37rem;
+    top: 2rem;
+    width: 40%;
+}
+
+.story1-4{
+    position: absolute;
+    right: 8rem;
+    top: 7rem;
+    width: 40%;
+}
+
+.story2{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    height: 100vh;
+}
+
+.story2-1{
+    position: absolute;
+    left: 8rem;
+    bottom: 25rem;
+    width: 28%;
+}
+
+.story2-2{
+    position: absolute;
+    bottom: 10rem;
+    left: 10rem;
+    width: 25%;
+}
+
+.story2-3{
+    position: absolute;
+    top: 2rem;
+    left: 30em;
+    width: 28%;
+}
+
+.story2-4{
+    position: absolute;
+    right: 9rem;
+    bottom: 5rem;
+    width: 45%;
+}
+
+.story3{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    height: 100vh;
+}
+.story3-1{
+    position: absolute;
+    left: 2rem;
+    top: -1rem;
+    width: 40%;
+}
+
+.story3-2{
+    position: absolute;
+    right: 17rem;
+    top: 4rem;
+    width: 23%;
+}
+
+.story3-3{
+    position: absolute;
+    left: 23rem;
+    width: 35%;
+}
+
+.story3-4{
+    position: absolute;
+    right: 5rem;
+    top: 10rem;
     width: 50%;
-    z-index: 1000;
+}
+
+.story4{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    height: 100vh;
+}
+
+.story4-1{
+    position: absolute;
+    left: 7rem;
+    top: -7rem;
+    width: 40%;
+}
+
+.story4-2{
+    position: absolute;
+    left: 13rem;
+    top: 7rem;
+    width: 32%;
+}
+
+.story4-3{
+    position: absolute;
+    bottom: 1rem;
+    right: 10rem;
+    width: 55%;
+}
+
+
+.parallaxes{
+    position: relative;
+
+    transform-style: preserve-3d;
+    z-index: -1;
+
+}
+.content-wrapper{
+    background-color: hsla(0, 100%, 0%, .8);
+    padding: 3rem 0;
+
+}
+
+section{
+    position: relative;
+}
+.container{
+    
+}
+
+.content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
