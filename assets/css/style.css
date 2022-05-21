@@ -258,3 +258,19 @@ section{
     align-items: center;
     color: white;
 }
+.globe{
+    animation: global 5s infinite;
+}
+
+@keyframes global {
+    from {
+        transform: rotate(0deg) translate3d(3px, 0, 0) rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg) translate3d(3px, 0, 0) rotate(-360deg);
+      }
+}
+svg{
+    position: absolute;
+    
+}
