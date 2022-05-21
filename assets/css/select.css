@@ -1,0 +1,43 @@
+body {
+    background-color: #282828;
+}
+
+.world {
+    transform: rotate(-110deg);
+}
+
+.world-absolute {
+    position: fixed;
+    top: 70vh;
+    overflow: hidden;
+}
+
+.rocket {
+    transform: translate(-300px, 360px) rotate(80deg);
+    position: absolute;
+    animation: rocketmove 4s 0s linear forwards;
+}
+
+@keyframes rocketmove {
+    0% {
+        transform: translate(-300px, 360px) rotate(80deg);
+    }
+
+    20% {
+        transform: translate(10px, 360px) rotate(80deg);
+    }
+
+    35% {
+        transform: translate(420px, 280px) rotate(40deg);
+    }
+
+    50% {
+        transform: translate(810px, 80px) rotate(0deg);
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        transform: translate(810px, calc(70vh - 260px)) rotate(0deg);
+    }
+
+}
