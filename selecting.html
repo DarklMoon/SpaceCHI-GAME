@@ -2,37 +2,56 @@
 <html>
 
 <head>
+
     <title>Selecting</title>
     <link rel="stylesheet" href="/assets/css/select.css">
 </head>
 
 <body>
-    <img src="/assets/image/blackwhite/roc2_1.png" width="500" class="rocketload">
+
+    <div id="container">
+      <div class="rocket1">
+        <img
+          src="/assets/image/blackwhite/roc2_1.png"
+          width="500"
+          class="rocketload"
+          class="float"
+        />
+      </div>
+      <div class="text">
+        <p id="demo"></p>
+      </div>
+
+      <div class="go" onclick="fadeOutEffect('container', 0.2)">
+        continue
+        <svg
+          fill="white"
+          width="50"
+          height="50"
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          stroke-linejoin="round"
+          stroke-miterlimit="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+            fill-rule="nonzero"
+          />
+        </svg>
+      </div>
+    </div>
     
     <div class="world-absolute">
         <img class="world" src="./assets/image/blackwhite/w4.png" width="1920" height="1080">
     </div>
-<<<<<<< HEAD
-    <img class="rocket" src="./assets/image/blackwhite/roc2_1.png" width="300">
-    <!-- <div class="box-select">
-        <svg width="1800" height="600">
-            <rect x="400" y="80" rx="20" ry="20" width="200" height="200"
-                style="fill:none;stroke-width:1.5;stroke:rgb(255, 255, 255)" />
-            <rect x="700" y="80" rx="20" ry="20" width="200" height="200"
-                style="fill:none;stroke-width:1.5;stroke:rgb(255, 255, 255)" />
-            <rect x="1000" y="80" rx="20" ry="20" width="200" height="200"
-                style="fill:none;stroke-width:1.5;stroke:rgb(255, 255, 255)" />
-            <rect x="1300" y="80" rx="20" ry="20" width="200" height="200"
-                style="fill:none;stroke-width:1.5;stroke:rgb(255, 255, 255)" />
-        </svg> -->
-=======
     <img class="rocket" src="./assets/image/roc2_1.png" width="300">
     <div class="box-select">
         <div class="box"><img src="t1.png" width="200" height="200"></div>
         <div class="box"><img src="t2.png" width="200" height="200"></div>
         <div class="box"><img src="t3.png" width="200" height="200"></div>
         <div class="box"><img src="t4.png" width="200" height="200"></div>
->>>>>>> 5ca7de5f6cf46cfee7b51f09a0918c40c1cfbad9
     </div>
     <!-- <div id="border-hide"></div> -->
     </div>
