@@ -1,5 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #282828;
+    background-image: url("spacestar.png");
+    overflow: hidden;
 }
 
 .world {
@@ -41,3 +47,188 @@ body {
     }
 
 }
+
+/* #border-hide {
+    height: 210px;
+    width: 210px;
+    background-color: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    position: absolute;
+    top: 74px;
+    left: 394px;
+} */
+
+.box:nth-child(1)>img {
+    padding: 0px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    display: block;
+}
+
+.box:nth-child(1) {
+    border: 3px solid transparent;
+    border-radius: 12px;
+    position: absolute;
+    top: 80px;
+    left: 400px;
+    padding: 10px;
+    transition: border 1s ease-out
+}
+
+.box:nth-child(1):hover {
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.box:nth-child(2)>img {
+    padding: 0px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    display: block;
+}
+
+.box:nth-child(2) {
+    border: 3px solid transparent;
+    border-radius: 12px;
+    position: absolute;
+    top: 80px;
+    left: 700px;
+    padding: 10px;
+    opacity: 0.3;
+    transition: border 1s ease-out
+}
+
+/* .box:nth-child(2):hover {
+    border: 3px solid rgb(255, 255, 255);
+} */
+
+.box:nth-child(3)>img {
+    padding: 0px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    display: block;
+}
+
+.box:nth-child(3) {
+    border: 3px solid transparent;
+    border-radius: 12px;
+    position: absolute;
+    top: 80px;
+    left: 1000px;
+    padding: 10px;
+    opacity: 0.3;
+    transition: border 1s ease-out
+}
+
+/* .box:nth-child(3):hover {
+    border: 3px solid rgb(255, 255, 255);
+} */
+
+.box:nth-child(4)>img {
+    padding: 0px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    display: block;
+}
+
+.box:nth-child(4) {
+    border: 3px solid transparent;
+    border-radius: 12px;
+    position: absolute;
+    top: 80px;
+    left: 1300px;
+    padding: 10px;
+    opacity: 0.3;
+    transition: border 1s ease-out
+}
+
+/* .box:nth-child(4):hover {
+    border: 3px solid rgb(255, 255, 255);
+} */
+
+.box-select {
+    opacity: 0;
+    animation: box-show 3s ease-in 4s forwards;
+}
+
+@keyframes box-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* .box-lock {
+    position: absolute;
+    top: 140px;
+    left: 770px; 
+    opacity: 0;
+    animation: lock-show 3s ease-in 4s forwards;
+}
+
+@keyframes lock-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+
+.lock:nth-child(1) {
+    position: absolute;
+    top: 140px;
+    left: 770px; 
+}
+
+.lock:nth-child(2) {
+    position: absolute;
+    top: 140px;
+    left: 1070px; 
+}
+
+.lock:nth-child(3) {
+    position: absolute;
+    top: 140px;
+    left: 1370px; 
+}
+
+.box-lock {
+    opacity: 0;
+    animation: lock-show 3s ease-in 4s forwards;
+}
+
+@keyframes lock-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ontheworld {
+    transform: rotate(30deg);
+    position: absolute;
+    top: 56vh;
+    right: 7vw;
+    overflow: hidden;
+    opacity: 0;
+    animation: sth-show 3s ease-in 4s forwards;
+}
+
+@keyframes sth-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
