@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space-CHI</title>
+    <link rel="stylesheet" href="/spaceCHI-game/assets/css/style.css">
+    <style>
+        body{
+            background-color : hsl(211.8,73.1%,13.1%);
+            height: 100vh;
+        }
+        .container{
+            height: 100vh;
+            margin: 0px;
+            
+        }
+        .title{
+            color: aqua;
+            /* border: 5px solid #FFFF00; */
+            text-align: center;
+            font-size: 30px;
+            position: static;
+            top: 200px;
+        }
+        #words{
+            position:relative;
+            left: 180px;
+        }
+        .box-words{
+            background-color: bisque;
+            width: 495px;
+            height: 450px;
+            position: relative;
+            left: 150px;
+            top: 100px;
+        }
+        .locker{
+            background-color: red;
+            width: 495px;
+            height: 50px;
+            text-align: center;
+            font-size: 50px;
+        }
+        .clothes1{
+            font-size: 35px; 
+            margin-left: 1rem;
+            background-color: blue;
+            width: 195px;
+            position:absolute;
+            top: 75px;
+            left: 10px;
+        }
+        .clothes2{
+            font-size: 35px; 
+            margin-left: 2rem;
+            background-color: blue;
+            width: 195px;
+            position:absolute;
+            top: 75px;
+            left: 250px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 id = "tutorial">n of x words</h1>
+        </div>
+        <div class = "box-words">
+                <div class = "locker">words
+                    <div class = "clothes1">
+                        <h5> - Nanobots</h5>
+                        <h5> - Body</h5>
+                        <h5> - Robots</h5>
+                        <h5> - wireless cloud</h5>
+                    </div>
+                    <div class = "clothes2">
+                        <h5> - Nanobots</h5>
+                        <h5> - Body</h5>
+                        <h5> - Robots</h5>
+                        <h5> - wireless cloud</h5>
+                    </div>
+                </div>
+        </div>
+=======
