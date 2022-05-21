@@ -264,8 +264,14 @@ section{
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    color: white;
+    color: hsl(0, 0%, 80%);
     padding: 0px 0px 100px 0px;
+}
+
+.start2 a:hover{
+    transform: scale(1.2);
+    color: hsl(0, 0%, 100%);
+    transition: .2s ease-in-out;
 }
 
 .globe{
