@@ -44,7 +44,7 @@ body {
 }
 /* #141414 */
 .left {
-    background-color: hsla(0, 0%, 0%, 0);
+    /* background-color: hsla(0, 0%, 20%, 1); */
 	
 	float: left;
 	width: 820px;
@@ -58,9 +58,9 @@ body {
 }
 
 .letters {
-    
-	font-size: 1.3em;
+	font-size: 1.9em;
 	font-family: 'Fresca', serif;
+	z-index: 2000;
 }
 
 .letters span {
@@ -72,7 +72,7 @@ body {
 	line-height: 43px;
 	text-align: center;
 	font-size: 1em;
-
+	z-index: 2000;
 }
 
 .right {
@@ -119,4 +119,55 @@ canvas {
 	display: block;
 	float: left;
 
+}
+
+/* .container{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+} */
+
+.modal a{
+	background-color: hsl(0, 0%, 50%);
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px hsl(0, 0%, 50%);
+	color: black;
+	margin-top: 3rem;
+	padding: 5px 10px;
+	font-family: "Prompt", sans-serif;
+}
+.modal-container{
+	background-color: hsl(0, 100%, 100%);
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	height: 25vh;
+	width: 25vw;
+	border-radius: 2rem;
+	pointer-events: none;
+	z-index: -2000;
+	opacity: 0;
+}
+
+.modal{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	font-family: "Prompt", sans-serif;
+	max-width: 100%;
+	
+}
+
+.modal-container.show {
+	pointer-events: auto;
+	opacity: 1;
+	z-index: 2000;
+	transition: all 2s;
 }
