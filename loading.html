@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <title>Loading</title>
+</head>
+<style>
+    body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url(https://cdn.discordapp.com/attachments/936538603402706967/977988605677027418/color4s.png);
+    font-family: 'Cubano', cursive;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+    img{
+        position: relative;
+        top: 250px;
+        left: 780px;
+        animation: rocket 18s 10s forwards infinite,rocket2 22s forwards ;
+        
+    }
+
+    @keyframes rocket{
+        0%{
+            transform: translateX(0%);
+        }
+        50%{
+            transform: translateX(5%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    @keyframes rocket2{
+        from{
+            transform: translateY(0%);
+        }
+        to{
+            transform: translateY(-250%);
+        }
+    }
+    .under{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 250px;
+        font-size: 20px;
+        font-family: "Prompt", sans-serif;
+        padding: 0 14em;
+        text-align: center;
+    }
+    .go{
+        position: relative;
+        font-size: 50px;
+        top:450px;
+        left: 1650px;
+        animation: button 2s infinite;
+    }
+    @keyframes button {
+        0%{
+            opacity:1;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    </style>
+<body>
+    <img src="https://cdn.discordapp.com/attachments/936538603402706967/977991700515524648/roc3.png" alt="Paris" width="300" height="300">
+    <div class = "under">
+        <p id = "demo"></p>
+    </div>
+    
+    
+    <div class="go" onclick="fadeOutEffect('container', 0.2)">
+        continue
+        <svg
+          fill="white"
+          width="50"
+          height="50"
+          clip-rule="evenodd"
+          fill-rule="evenodd"
+          stroke-linejoin="round"
+          stroke-miterlimit="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m14.523 18.787s4.501-4.505 6.255-6.26c.146-.146.219-.338.219-.53s-.073-.383-.219-.53c-1.753-1.754-6.255-6.258-6.255-6.258-.144-.145-.334-.217-.524-.217-.193 0-.385.074-.532.221-.293.292-.295.766-.004 1.056l4.978 4.978h-14.692c-.414 0-.75.336-.75.75s.336.75.75.75h14.692l-4.979 4.979c-.289.289-.286.762.006 1.054.148.148.341.222.533.222.19 0 .378-.072.522-.215z"
+            fill-rule="nonzero"
+          />
+        </svg>
+      </div>
+    </div>
+</body>
+<script>
+    const rocket = document.getElementById("container");
+function fadeOutEffect(id, time) {
+  target = document.getElementById(id);
+  alpha = 100;
+  timer = time * 2;
+  var i = setInterval(function () {
+    if (alpha <= 0) {
+      clearInterval(i);
+      rocket.style.display = "none";
+    }
+
+    // me.style.zIndex = 1000;
+    setAlpha(target, alpha);
+    alpha -= 1;
+  }, timer);
+}
+function setAlpha(target, alpha) {
+  target.style.opacity = alpha / 100;
+}
+
+
+var i = 0;
+var txt =
+  "ยินดีด้วย คุณได้ปลดล็อคเทคโนโลยีครบหมดแล้ว คุณสามารถดำรงชีวิตอยุ่บนดาวอังคารได้อย่างปลอดภัยแต่นอกเนื้อจากเทคโนโลยีที่ได้ปลดล็อคมา ยังมีเทคโนโลยีอื่นๆนอกจากนี้ ที่มีการปฎิสัมพันธ์ระหว่างคอมพิวเตอร์ กับมนุษย์";
+var speed = 50;
+
+window.onload = typeWriter;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
