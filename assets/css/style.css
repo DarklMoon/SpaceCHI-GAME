@@ -15,7 +15,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-color: hsl(0, 0%, 12%);
+    background-color: #141414;
     /* overflow: hidden; */
     font-family: 'Cubano', cursive;
     overflow-x: hidden;
@@ -52,6 +52,7 @@ body {
     line-height: 5rem;
     color: hsl(0, 0%, 60%);
     padding: 5px;
+    margin-top:6rem;
     animation: blink 2s infinite alternate;
 }
 
@@ -76,15 +77,15 @@ body {
 
 .globe{
     position: absolute;
-    top: 8rem;
-    right: 5rem;
-    width: 32rem;
+    top: 10rem;
+    right: 10rem;
+    width: 40rem;
 }
 .star{
     position: absolute;
     top: 1.5rem;
-    width: 48rem;
-    right: -2rem;
+    width: 60rem;
+    right: 0rem;
 }
 
 .story1{
@@ -101,29 +102,29 @@ body {
 .str1-1{
     --w:356;
     width:calc(var(--w) / 1920 * 100%);
-    left:0vw;
+    left:7vw;
     top:0vw;
 }
 
 .str1-2{
     --w:856;
     width:calc(var(--w) / 1920 * 100%);
-    left:7vw;
-    top:0vw;
+    left:9vw;
+    top:-5vw;
 }
 
 .str1-3{
     --w:836;
       width:calc(var(--w) / 1920 * 100%);
-      left:40vw;
+      right:18vw;
       top:-5vw;
 }
 
 .str1-4{
     --w:778;
       width:calc(var(--w) / 1920 * 100%);
-      right:0vw;
-      top:0vw;
+      right:9vw;
+      top:3vw;
 }
 
 .story2{ 
@@ -140,28 +141,28 @@ body {
 .str2-1{
     --w:661;
     width:calc(var(--w) / 1920 * 100%);
-    left:0vw;
+    left:7vw;
     top:0vw;
 }
 
 .str2-2{
     --w:500;
     width:calc(var(--w) / 1920 * 100%);
-    left:0vw;
-    bottom: 4vw;
+    left:10vw;
+    bottom: 1vw;
 }
 
 .str2-3{
-    --w:356;
+    --w:652;
     width:calc(var(--w) / 1920 * 100%);
-    left:0vw;
+    right:30vw;
     top:0vw;
 }
 
 .str2-4{
-    --w:356;
+    --w:931;
     width:calc(var(--w) / 1920 * 100%);
-    left:0vw;
+    right:10vw;
     top:0vw;
 }
 
@@ -177,31 +178,31 @@ body {
 }
 
 .str3-1{
-    --w:356;
+    --w:750;
     width:calc(var(--w) / 1920 * 100%);
-    left:0vw;
+    left:7vw;
     top:0vw;
 }
 
 .str3-2{
-    --w:356;
+    --w:475;
     width:calc(var(--w) / 1920 * 100%);
-    left:0vw;
-    top:0vw;
+    right:20vw;
+    top:2vw;
 }
 
 .str3-3{
-    --w:356;
+    --w:854;
     width:calc(var(--w) / 1920 * 100%);
-    left:0vw;
-    top:0vw;
+    right:33vw;
+    top:7vw;
 }
 
 .str3-4{
-    --w:356;
+    --w:900;
     width:calc(var(--w) / 1920 * 100%);
-    left:0vw;
-    top:0vw;
+    right:7vw;
+    top:11vw;
 }
 
 .story4{ 
@@ -216,24 +217,24 @@ body {
 }
 
 .str4-1{
-    --w:356;
+    --w:800;
     width:calc(var(--w) / 1920 * 100%);
-    left:0vw;
-    top:0vw;
+    left:10vw;
+    top:-9vw;
 }
 
 .str4-2{
-    --w:356;
+    --w:600;
     width:calc(var(--w) / 1920 * 100%);
-    left:0vw;
-    top:0vw;
+    left:10vw;
+    top:5vw;
 }
 
 .str4-3{
-    --w:356;
+    --w:900;
     width:calc(var(--w) / 1920 * 100%);
-    left:0vw;
-    top:0vw;
+    right:20vw;
+    top:5vw;
 }
 
 
