@@ -13,7 +13,7 @@ body {
 	overflow: hidden;
 }
 
-#main {
+#main{	
 	position: relative;
 	display: block;
 	width: 70em;
@@ -34,17 +34,17 @@ body {
 
 .gamescr2{
     position: absolute;
-    top: 1rem;
-    right: -11rem;
+    top: -3rem;
+    right: -2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 33%;
+    width: 140%;
     /* height: 80vh; */
 }
 /* #141414 */
 .left {
-    background-color: hsla(0, 0%, 0%, 0);
+    /* background-color: hsla(0, 0%, 20%, 1); */
 	
 	float: left;
 	width: 820px;
@@ -58,9 +58,11 @@ body {
 }
 
 .letters {
-    
-	font-size: 1.3em;
+	font-size: 1.9em;
 	font-family: 'Fresca', serif;
+	z-index: 2000;
+	z-index: 1000;
+	position:relative;
 }
 
 .letters span {
@@ -72,7 +74,7 @@ body {
 	line-height: 43px;
 	text-align: center;
 	font-size: 1em;
-
+	z-index: 2000;
 }
 
 .right {
@@ -85,6 +87,7 @@ body {
 	margin-top: 8rem;
 	margin-right: -6rem;
 	/* box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5); */
+	animation: vocab 3s alternate infinite;
 }
 
 .words {
@@ -119,4 +122,64 @@ canvas {
 	display: block;
 	float: left;
 
+}
+
+/* .container{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+} */
+
+.modal a{
+	background-color: hsl(0, 0%, 50%);
+	border: 0;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px hsl(0, 0%, 50%);
+	color: black;
+	margin-top: 3rem;
+	padding: 5px 10px;
+	font-family: "Prompt", sans-serif;
+}
+.modal-container{
+	background-color: hsl(0, 100%, 100%);
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	height: 25vh;
+	width: 25vw;
+	border-radius: 2rem;
+	pointer-events: none;
+	z-index: -2000;
+	opacity: 0;
+}
+
+.modal{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	font-family: "Prompt", sans-serif;
+	max-width: 100%;
+	
+}
+
+.modal-container.show {
+	pointer-events: auto;
+	opacity: 1;
+	z-index: 2000;
+	transition: all 2s;
+}
+
+@keyframes vocab {
+	0%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(20px);	
+	}
 }

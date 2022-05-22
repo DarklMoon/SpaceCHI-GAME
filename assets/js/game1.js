@@ -143,7 +143,8 @@ $(document).ready(function() {
 					scratchWord();
 					// Check if the game is over
 					if(isEndOfGame()) {
-						alert("Good job!");
+					   goToMenu();
+					
 					}
 				}
 
@@ -156,6 +157,12 @@ $(document).ready(function() {
 
 	});
 })
+
+function goToMenu(){
+	const container = document.getElementById("container");
+	container.classList.add('show');
+
+}
 
 // This function is called when lines need to be drawn on the game
 function draw(f) {
