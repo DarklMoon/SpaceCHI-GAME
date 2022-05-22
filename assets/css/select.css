@@ -47,7 +47,7 @@ body {
 }
 
 .rocketload {
-  width: 10%;
+  width: 20%;
   transform: rotate(90deg);
   animation: float 1s forwards infinite, move 3s 16s forwards;
 }
@@ -57,7 +57,7 @@ body {
     transform: rotate(90deg) translateY(0px);
   }
   100% {
-    transform: rotate(90deg) translateY(-1000px);
+    transform: rotate(90deg) translateY(-1100px);
   }
 }
 

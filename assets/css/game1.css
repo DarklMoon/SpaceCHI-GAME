@@ -1,0 +1,118 @@
+ * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+    background-color: #141414;
+    background-image: url("https://cdn.discordapp.com/attachments/958007561242685450/977855903275577364/spacestar.png");
+
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#main {
+	position: relative;
+	display: block;
+	width: 70em;
+	margin: 20vh auto;
+	
+}
+
+.gamescr{
+    position: absolute;
+    top: -8rem;
+    left: -20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* height: 80vh; */
+}
+
+.gamescr2{
+    position: absolute;
+    top: -3.5rem;
+    right: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    /* height: 80vh; */
+}
+/* #141414 */
+.left {
+    background-color: hsla(0, 0%, 0%, 0);
+	float: left;
+	width: 820px;
+	height: auto;
+	border: 10px solid black;
+	border-radius: 3px;
+    margin-left: -11rem; 
+	box-shadow: 0 10px 20px -6px white;
+    
+}
+
+.letters {
+    
+	font-size: 1.3em;
+	font-family: 'Fresca', serif;
+}
+
+.letters span {
+	float:left;
+	width: 40px;
+	height: 40px;
+    color: white;
+	background: hsla(0, 100%, 0%, 0);
+	line-height: 43px;
+	text-align: center;
+	font-size: 1em;
+
+}
+
+.right {
+	float: right;
+	width: 220px;
+	height: auto;
+	/* border: 10px solid black; */
+	border-radius: 3px;
+
+	/* box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5); */
+}
+
+.words {
+    color: white;
+	font-size: 1.3em;
+	font-family: 'Fresca', serif;
+}
+
+.words span {
+	float:left;
+	width: 200px;
+	height: 40px;
+
+	background: hsla(0, 0%, 0%, 0);
+	line-height: 45px;
+	text-align: center;
+
+
+}
+
+.blur {
+	color: transparent;
+   	text-shadow: 0 0 6px rgba(0,0,0,0.7);
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+canvas {
+	position: absolute;
+	display: block;
+	float: left;
+
+}
