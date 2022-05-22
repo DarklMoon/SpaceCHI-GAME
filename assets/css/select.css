@@ -4,14 +4,14 @@
 
 body {
     position: relative;
-    background-image: url(/assets/image/blackwhite/spacestar.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #282828;
-    background-image: url("spacestar.png");
+    background-image: url("/assets/image/blackwhite/spacestar.png");
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+    z-index: -6000;
 }
 
 #container{
@@ -19,6 +19,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: black;
+  /* background-image: url("/assets/image/blackwhite/spacestar.png"); */
+  z-index: 10000;
 }
 .rocket1 {
   display: flex;
@@ -26,12 +29,14 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  transform: translateY(-5rem);
 }
 
 .text {
   position: absolute;
   top: 27rem;
 }
+
 .text p {
   padding: 0 20rem;
   text-align: center;
@@ -79,6 +84,7 @@ body {
   right: 2rem;
   bottom: 5rem;
   cursor: pointer;
+  z-index: 10000;
 }
 
 .world {
@@ -89,13 +95,14 @@ body {
     position: fixed;
     top: 70vh;
     opacity: 0;
-    animation: world 4s 26s linear forwards;
+    z-index: -5000;
+    animation: world 4s linear forwards;
 }
 
 .rocket {
     transform: translate(-300px, 360px) rotate(80deg);
     position: absolute;
-    animation: rocketmove 4s 30s linear forwards;
+    animation: rocketmove 4s linear forwards;
 }
 
 @keyframes world {
@@ -155,7 +162,8 @@ body {
     top: 80px;
     left: 400px;
     padding: 10px;
-    transition: border 1s ease-out
+    transition: border 1s ease-out;
+        
 }
 
 .box:nth-child(1):hover {
@@ -177,7 +185,7 @@ body {
     left: 700px;
     padding: 10px;
     opacity: 0.3;
-    transition: border 1s ease-out
+    transition: border 1s ease-out;
 }
 
 /* .box:nth-child(2):hover {
@@ -199,7 +207,7 @@ body {
     left: 1000px;
     padding: 10px;
     opacity: 0.3;
-    transition: border 1s ease-out
+    transition: border 1s ease-out;
 }
 
 /* .box:nth-child(3):hover {
@@ -221,7 +229,7 @@ body {
     left: 1300px;
     padding: 10px;
     opacity: 0.3;
-    transition: border 1s ease-out
+    transition: border 1s ease-out;
 }
 
 /* .box:nth-child(4):hover {
@@ -229,8 +237,10 @@ body {
 } */
 
 .box-select {
+    position: absolute;
     opacity: 0;
-    animation: box-show 3s ease-in 4s forwards;
+    animation: box-show 3s ease-in forwards;
+    z-index: -2000;
 }
 
 @keyframes box-show {
@@ -281,7 +291,9 @@ body {
 
 .box-lock {
     opacity: 0;
-    animation: lock-show 3s ease-in 4s forwards;
+    animation: lock-show 3s ease-in forwards;
+    position: absolute;
+    z-index: -3000;
 }
 
 @keyframes lock-show {
@@ -301,7 +313,8 @@ body {
     right: 7vw;
     overflow: hidden;
     opacity: 0;
-    animation: sth-show 3s ease-in 4s forwards;
+    animation: sth-show 3s ease-in forwards;
+    z-index: -4000;
 }
 
 @keyframes sth-show {
