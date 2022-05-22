@@ -15,7 +15,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-color: hsl(0, 0%, 12%);
+    background-color: #141414;
     /* overflow: hidden; */
     font-family: 'Cubano', cursive;
     overflow-x: hidden;
@@ -52,6 +52,7 @@ body {
     line-height: 5rem;
     color: hsl(0, 0%, 60%);
     padding: 5px;
+    margin-top:6rem;
     animation: blink 2s infinite alternate;
 }
 
@@ -76,154 +77,164 @@ body {
 
 .globe{
     position: absolute;
-    top: 8rem;
-    right: 5rem;
-    width: 32rem;
+    top: 10rem;
+    right: 10rem;
+    width: 40rem;
 }
 .star{
     position: absolute;
     top: 1.5rem;
-    width: 48rem;
-    right: -2rem;
+    width: 60rem;
+    right: 0rem;
 }
 
 .story1{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem;
-    height: 90vh;
+    width:100%;
+    height:50.52vw;
+    position:relative;
 }
 
-.story1-1{
-    position: absolute;
-    left: 5rem;
-    top: 5rem;
-    width: 25%;
+.story1-0{
+    position:absolute;
+    max-width:100%;    
 }
 
-.story1-2{
-    position: absolute;
-    left: 11rem;
-    top: 1rem;
-    width: 40%;
+.str1-1{
+    --w:356;
+    width:calc(var(--w) / 1920 * 100%);
+    left:7vw;
+    top:0vw;
 }
 
-.story1-3{
-    position: absolute;
-    left: 37rem;
-    top: 2rem;
-    width: 40%;
+.str1-2{
+    --w:856;
+    width:calc(var(--w) / 1920 * 100%);
+    left:9vw;
+    top:-5vw;
 }
 
-.story1-4{
-    position: absolute;
-    right: 8rem;
-    top: 7rem;
-    width: 40%;
+.str1-3{
+    --w:836;
+      width:calc(var(--w) / 1920 * 100%);
+      right:18vw;
+      top:-5vw;
 }
 
-.story2{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    height: 100vh;
+.str1-4{
+    --w:778;
+      width:calc(var(--w) / 1920 * 100%);
+      right:9vw;
+      top:3vw;
 }
 
-.story2-1{
-    position: absolute;
-    left: 8rem;
-    bottom: 25rem;
-    width: 28%;
+.story2{ 
+    width:100%;
+    height:50.52vw;
+    position:relative;
 }
 
-.story2-2{
-    position: absolute;
-    bottom: 10rem;
-    left: 10rem;
-    width: 25%;
+.story2-0{
+    position:absolute;
+    max-width:100%;  
 }
 
-.story2-3{
-    position: absolute;
-    top: 2rem;
-    left: 30em;
-    width: 28%;
+.str2-1{
+    --w:661;
+    width:calc(var(--w) / 1920 * 100%);
+    left:7vw;
+    top:0vw;
 }
 
-.story2-4{
-    position: absolute;
-    right: 9rem;
-    bottom: 5rem;
-    width: 45%;
+.str2-2{
+    --w:500;
+    width:calc(var(--w) / 1920 * 100%);
+    left:10vw;
+    bottom: 1vw;
+}
+
+.str2-3{
+    --w:652;
+    width:calc(var(--w) / 1920 * 100%);
+    right:30vw;
+    top:0vw;
+}
+
+.str2-4{
+    --w:931;
+    width:calc(var(--w) / 1920 * 100%);
+    right:10vw;
+    top:0vw;
 }
 
 .story3{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem;
-    height: 100vh;
-}
-.story3-1{
-    position: absolute;
-    left: 2rem;
-    top: -1rem;
-    width: 40%;
+    width:100%;
+    height:50.52vw;
+    position:relative;
 }
 
-.story3-2{
-    position: absolute;
-    right: 17rem;
-    top: 4rem;
-    width: 23%;
+.story3-0{
+    position:absolute;
+    max-width:100%;
 }
 
-.story3-3{
-    position: absolute;
-    left: 23rem;
-    width: 35%;
+.str3-1{
+    --w:750;
+    width:calc(var(--w) / 1920 * 100%);
+    left:7vw;
+    top:0vw;
 }
 
-.story3-4{
-    position: absolute;
-    right: 5rem;
-    top: 10rem;
-    width: 50%;
+.str3-2{
+    --w:475;
+    width:calc(var(--w) / 1920 * 100%);
+    right:20vw;
+    top:2vw;
 }
 
-.story4{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    height: 100vh;
+.str3-3{
+    --w:854;
+    width:calc(var(--w) / 1920 * 100%);
+    right:33vw;
+    top:7vw;
 }
 
-.story4-1{
-    position: absolute;
-    left: 7rem;
-    top: -7rem;
-    width: 40%;
+.str3-4{
+    --w:900;
+    width:calc(var(--w) / 1920 * 100%);
+    right:7vw;
+    top:11vw;
 }
 
-.story4-2{
-    position: absolute;
-    left: 13rem;
-    top: 1rem;
-    width: 32%;
+.story4{ 
+    width:100%;
+    height:50.52vw;
+    position:relative;
 }
 
-.story4-3{
-    position: absolute;
-    bottom: 1rem;
-    right: 10rem;
-    width: 55%;
+.story4-0{
+    position:absolute;
+    max-width:100%;
+}
+
+.str4-1{
+    --w:800;
+    width:calc(var(--w) / 1920 * 100%);
+    left:10vw;
+    top:-9vw;
+}
+
+.str4-2{
+    --w:600;
+    width:calc(var(--w) / 1920 * 100%);
+    left:10vw;
+    top:5vw;
+}
+
+.str4-3{
+    --w:900;
+    width:calc(var(--w) / 1920 * 100%);
+    right:20vw;
+    top:5vw;
 }
 
 
