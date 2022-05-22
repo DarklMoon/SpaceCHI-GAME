@@ -6,7 +6,7 @@ body {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #282828;
+    background-color: #141414;
     background-image: url("/assets/image/blackwhite/spacestar.png");
     overflow: hidden;
     width: 100vw;
@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: black;
+  background-color: #141414;
   /* background-image: url("/assets/image/blackwhite/spacestar.png"); */
   z-index: 10000;
 }
