@@ -1,4 +1,5 @@
 const rocket = document.getElementById("container");
+const rocket_landing = document.getElementById("rocket");
 function fadeOutEffect(id, time) {
   target = document.getElementById(id);
   alpha = 100;
@@ -7,6 +8,7 @@ function fadeOutEffect(id, time) {
     if (alpha <= 0) {
       clearInterval(i);
       rocket.style.display = "none";
+      rocket_landing.classList.add('animate')
     }
 
     // me.style.zIndex = 1000;

@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282828;
+    background-image: url("spacestar.png");
+    overflow: hidden;
+}
+
+.world {
+    transform: rotate(-110deg);
+}
+
+.world-absolute {
+    position: absolute;
+    top: 70vh;
+    left: calc(50vw - 960px);
+}
+
+.rocket {
+    transform: translate(810px, calc(70vh - 260px)) rotate(0deg);
+    position: absolute;
+    top: 0;
+    left: calc(50vw - 960px);
+    /* animation: rocketmove 4s 0s linear forwards; */
+}
+
+.box {
+    position: relative;
+    margin: 0 50px 0 50px;
+    border: 3px solid transparent;
+    border-radius: 12px;
+    padding: 10px;
+    transition: border 1s ease-out
+}
+
+.box > img:not(.lock) {
+    padding: 0px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    display: block;
+}
+
+.box:not(.disabled):hover {
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.box.disabled > img:not(.lock) {
+    opacity: 0.3;
+}
+
+/* .box:nth-child(4):hover {
+    border: 3px solid rgb(255, 255, 255);
+} */
+
+.box-select {
+    margin: auto;
+    display: flex;
+    width: fit-content;
+    margin-top: 10vh;
+    opacity: 0;
+    animation: box-show 1s ease-in 0s forwards;
+}
+
+@keyframes box-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.lock {
+    position: absolute;
+    padding: 5px;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+
+.ontheworld{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    animation: box-show 1s ease-in 0s forwards;
+}
+
+.ontheworld > img.b1w{
+    transform: rotate(40deg);
+    position: absolute;
+    top: -20px;
+    left: calc(50% + 200px);
+}
+
+.ontheworld > img.b2w{
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -20px;
+    left: calc(50% - (500px + 200px));
+}
+
+.ontheworld > img.b3w{
+    transform: rotate(-25deg);
+    position: absolute;
+    top: -180px;
+    left: calc(50% - 440px);
+}
+
+.ontheworld > img.b4w{
+    transform: rotate(22deg);
+    position: absolute;
+    top: -150px;
+    left: calc(50% + 90px);
+}
+
+.color-on-top > img {
+    position: absolute;
+    /* bottom: 69vh; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    animation: box-show 1s ease-in 0s forwards;
+}
+
