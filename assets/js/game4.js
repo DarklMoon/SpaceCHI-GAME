@@ -1,16 +1,15 @@
 var pos = [];
-var click = { "startPos": "", "endPos": ""} ;
+var click = { "startPos": "", "endPos": ""};
 var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
 			   "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-
-var words = [ { "word": "REALITY", 
+var words = [ { "word": "NANOBOT", 
                 "direction": "N",
-                "start": 135 },
-			  { "word": "MARKERLESS", "direction": "SE", "start": 1 },
-			  { "word": "ENVIRONMENT", "direction": "E", "start": 148 },
-			  { "word": "BIOREGENERATIVE", "direction": "E", "start": 24 },
-			  { "word": "ASTROBOTANY", "direction": "E", "start": 87 },
-			  { "word": "GREENHOUSE", "direction": "S", "start": 19 },
+                "start": 132 },
+                { "word": "TECHNOLOGY", "direction": "SW", "start": 12 },
+                { "word": "ROBOTS", "direction": "E", "start": 15},
+                { "word": "NANOTECH", "direction": "E", "start": 92 },
+                { "word": "BODY", "direction": "SE", "start": 133 },
+                { "word": "INTELLIGENT", "direction": "E", "start": 2 },
 			];
 
 // Prepare the wordsearch with random letters and word layout
