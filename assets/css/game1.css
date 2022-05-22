@@ -34,12 +34,12 @@ body {
 
 .gamescr2{
     position: absolute;
-    top: 1rem;
-    right: -11rem;
+    top: -3rem;
+    right: -2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 33%;
+    width: 140%;
     /* height: 80vh; */
 }
 /* #141414 */
@@ -61,6 +61,8 @@ body {
     
 	font-size: 1.3em;
 	font-family: 'Fresca', serif;
+	z-index: 1000;
+	position:relative;
 }
 
 .letters span {
@@ -85,6 +87,7 @@ body {
 	margin-top: 8rem;
 	margin-right: -6rem;
 	/* box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5); */
+	animation: vocab 3s alternate infinite;
 }
 
 .words {
@@ -119,4 +122,13 @@ canvas {
 	display: block;
 	float: left;
 
+}
+
+@keyframes vocab {
+	0%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(20px);	
+	}
 }
