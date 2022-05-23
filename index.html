@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space-CHI</title>
+    <title>SEARCH-CHI</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onload="sound()">
+    
     <section class="parallaxes">
+        
         <div class="header">
             <h1>SEARCH - CHI</h1>
         </div>
@@ -79,11 +81,18 @@
            <div class="start2">
                <a href="/selecting.html">  START </a>
            </div>
-
+           
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    
+      function sound() {
+      var sound = new Audio('/sound-design/button')
+      sound.volume = 0.2;
+      sound.loop = true;
+      sound.play();
+}
     </script>
     <script src="assets/js/script.js"> </script>
 </body>

@@ -23,6 +23,34 @@ body {
     /* transform-style: preserve-3d; */
     /* perspective: 5px; */
 }
+
+/* .footer {
+    display: flex;
+    max-width: 1000px;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 50rem;
+}
+
+.left_footer img{
+  width: 300px;
+}
+.left_footer{
+    margin-left: 2rem;
+    width: 60%;
+    text-align: left;
+    box-sizing: border-box;
+}
+.right_footer img{
+    width: 100px;
+}
+.right_footer{
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+} */
+
 .left{
     display: flex;
     justify-content: center;

@@ -126,23 +126,7 @@ body {
 }
 
 .fade{
-    animation: fade 3s 2s ease-in-out forwards;
-}
-
-.rocket.show{
-    transition: all 2s;
-    opacity: 1;
-    transform: scale(1.5);
-    animation: lauch 5s ease-in-out forwards;
-}
-
-@keyframes lauch {
-    form{
-        transform: translateY(0px);
-    }
-    to{
-        transform: translateY(100px);
-    }
+    animation: fade 5s 5s ease-in-out forwards;
 }
 
 @keyframes fade {

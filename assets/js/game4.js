@@ -346,3 +346,10 @@ function scratchWord() {
 function isEndOfGame(){
 	return pos.every(function(o) { return o.start === 0 && o.end === 0; });
 }
+
+function sound() {
+	var sound = new Audio('/sound-design/background/game.mp3');
+	sound.volume = 0.2;
+	sound.loop = true;
+	sound.play();
+}
