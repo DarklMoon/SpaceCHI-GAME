@@ -4,7 +4,7 @@
 
 body {
     background-color: #141414;
-    background-image: url("spacestar.png");
+    background-image: url("/assets/image/blackwhite/spacestar.png");
     overflow: hidden;
 }
 
@@ -120,10 +120,54 @@ body {
     position: absolute;
     /* bottom: 69vh; */
     width: 100%;
-    top: 0;
+    top: -85vw;
     left: 0;
     overflow: hidden;
-    opacity: 0;
-    animation: box-show 1s ease-in 0s forwards;
+    opacity: 1;
+ 
 }
 
+.c1{
+    animation: aura1 4.5s alternate infinite;
+}
+.c2{
+    animation: aura2 5s alternate infinite;
+}
+.c3{
+    animation: aura3 3s alternate infinite;
+}
+
+@keyframes aura1 {
+    0%{
+        top:-85vw;
+    }
+    50%{
+        top:-84vw;
+    }
+    100%{
+        top:-85vw;
+    }
+}
+
+@keyframes aura2 {
+    0%{
+        top:-80vw;
+    }
+    50%{
+        top:-79vw;
+    }
+    100%{
+        top:-80vw;
+    }
+}
+@keyframes aura3 {
+    0%{
+        top:-79vw;
+    }
+    50%{
+        top:-78vw;
+    }
+    100%{
+        top:-77vw;
+    }
+}

@@ -4,12 +4,14 @@
 
 body {
     background-color: #141414;
-    background-image: url("spacestar.png");
+    background-image: url("/assets/image/blackwhite/spacestar.png");
     overflow: hidden;
 }
 
 .world {
-    transform: rotate(0deg);
+    position: relative;
+    transform: rotate(-110deg) translatex(-120px);
+    top:-10rem;
 }
 
 .world-absolute {
@@ -21,10 +23,10 @@ body {
 .rocket {
     transform: translate(810px, calc(70vh - 260px)) rotate(0deg);
     position: absolute;
-    top: -.1px;
+    top: -100px;
 
-    left: calc(50vw - 960px);
-    width: 20rem;
+    left: calc(50vw - 1060px);
+    width: 30rem;
     /* animation: rocketmove 4s 0s linear forwards; */
 }
 
@@ -121,8 +123,8 @@ body {
     top: 0;
     left: 0;
     overflow: hidden;
-    opacity: 0;
-    animation: box-show 1s ease-in 0s forwards;
+    opacity: 1;
+    
 }
 
 .fade{
@@ -135,5 +137,54 @@ body {
     }
     to{
         opacity: 0;
+    }
+}
+
+.c1{
+    animation: aura1 4.5s alternate infinite;
+}
+.c2{
+    animation: aura2 5s alternate infinite;
+}
+.c3{
+    animation: aura3 5s alternate infinite;
+}
+
+.c4{
+    animation: aura3 5s alternate infinite;
+}
+
+@keyframes aura1 {
+    0%{
+        top:-80vw;
+    }
+    50%{
+        top:-82vw;
+    }
+    100%{
+        top:-80vw;
+    }
+}
+
+@keyframes aura2 {
+    0%{
+        top:-76vw;
+    }
+    50%{
+        top:-78vw;
+    }
+    100%{
+        top:-77vw;
+    }
+}
+@keyframes aura3 {
+    0%{
+        top:-74vw;
+    }
+    50%{
+        top:-76vw;
+    }
+    100%{
+        top:-73vw;
     }
 }
