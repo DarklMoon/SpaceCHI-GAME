@@ -6,8 +6,12 @@ body {
     background-color: #141414;
     background-image: url("/assets/image/blackwhite/spacestar.png");
     overflow: hidden;
+    animation: bg 2s alternate infinite;
 }
-
+@keyframes bg {
+    from{background-image: url("/assets/image/blackwhite/spacestar.png");}
+    to{background-image: url("/assets/image/blackwhite/spacestar3.png");}
+}
 .world {
     transform: rotate(-110deg);
 }
@@ -17,6 +21,7 @@ body {
     top: 70vh;
     left: calc(50vw - 960px);
     overflow: hidden;
+    /*animation: gavi 2s alternate infinite;*/
 }
 
 .rocket {
@@ -117,4 +122,9 @@ body {
     100%{
         top:-90vw;
     }
+}
+
+@keyframes gavi {
+    from{transform: translateY(0px);}
+    to{transform: translateY(20px);}
 }

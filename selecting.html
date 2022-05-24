@@ -22,7 +22,7 @@
       <p id="demo"></p>
     </div>
 
-    <div class="go" onclick="fadeOutEffect('container', 0.2)">
+    <div  class="go" onclick="fadeOutEffect('container', 0.2)">
       continue
       <svg fill="white" width="50" height="50" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
         stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -32,12 +32,13 @@
       </svg>
     </div>
   </div>
-
+  <audio id="hov" src="/sound-design/button-sound/Hold-button.mp3" preload="auto">
+  </audio>
   <div class="world-absolute">
     <img class="world" src="/assets/image/blackwhite/w4.png" width="1920" height="1080">
   </div>
   <img id="rocket" class="rocket" src="/assets/image/blackwhite/roc2_1.png" width="300">
-  <div class="box-select">
+  <div id="play" class="box-select">
     <a href="game1.html" class="box">
       <img src="/assets/image/fit-item/t1.png" width="200" height="200">
     </a>
@@ -56,6 +57,7 @@
   </div>
 
   <script src="/assets/js/selecting.js"></script>
+  
 </body>
 
 </html>

@@ -12,6 +12,11 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -6000;
+    animation: bg 2s alternate infinite;
+}
+@keyframes bg {
+    from{background-image: url("/assets/image/blackwhite/spacestar.png");}
+    to{background-image: url("/assets/image/blackwhite/spacestar3.png");}
 }
 
 #container{

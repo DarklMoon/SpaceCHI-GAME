@@ -77,22 +77,16 @@
            <div class="content1" id="special">
             <p> และนี่ คือจุดเริ่มต้นการผจญภัยของเขา...</p>
            </div>
-
-           <div class="start2">
-               <a href="/selecting.html">  START </a>
+           <audio id="hov" src="/sound-design/button-sound/Hold-button.mp3" preload="auto">
+        </audio>
+           <div id="play" class="start2">
+               <a href="/selecting.html" ">  START </a>
            </div>
            
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
-    
-      function sound() {
-      var sound = new Audio('/sound-design/button')
-      sound.volume = 0.2;
-      sound.loop = true;
-      sound.play();
-}
+      AOS.init();    
     </script>
     <script src="assets/js/script.js"> </script>
 </body>

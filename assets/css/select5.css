@@ -6,6 +6,11 @@ body {
     background-color: #141414;
     background-image: url("/assets/image/blackwhite/spacestar.png");
     overflow: hidden;
+    animation: bg 2s alternate infinite;
+}
+@keyframes bg {
+    from{background-image: url("/assets/image/blackwhite/spacestar.png");}
+    to{background-image: url("/assets/image/blackwhite/spacestar3.png");}
 }
 
 .world {
@@ -151,7 +156,7 @@ body {
 }
 
 .c4{
-    animation: aura3 5s alternate infinite;
+    animation: aura3 5.5s alternate infinite;
 }
 
 @keyframes aura1 {

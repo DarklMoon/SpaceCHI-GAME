@@ -20,6 +20,8 @@ body {
     font-family: 'Cubano', cursive;
     overflow-x: hidden;
     overflow-y: auto;
+    background-image: url("/assets/image/blackwhite/spacestar2.png");
+    ba
     /* transform-style: preserve-3d; */
     /* perspective: 5px; */
 }
@@ -305,12 +307,13 @@ section{
     font-size: 3rem;
     color: hsl(0, 0%, 80%);
     padding: 0px 0px 100px 0px;
+    transition: all .2s;
 }
 
 .start2 a:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: hsl(0, 0%, 100%);
-    transition: .2s ease-in-out;
+ 
 }
 
 .globe{
