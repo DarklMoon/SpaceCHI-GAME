@@ -307,7 +307,9 @@ function scratchWord() {
 	for (var i = 0; i < words.length; i++) {
 		if ((click.startPos === words[i].start && click.endPos === words[i].end) ||
 			(click.startPos === words[i].end && click.endPos === words[i].start)) {
-			$(".words").find("." + i).addClass("strike");		
+			$(".words").find("." + i).addClass("strike");
+
+			popWord(words[i].word)
 		}
 	}
 
@@ -322,4 +324,24 @@ function sound() {
 	sound.volume = 0.2;
 	sound.loop = true;
 	sound.play();
+}
+
+var meaning = {
+	GREENHOUSE: "โรงปลูกพืช",
+	BIOREGENERATIVE: "คือ โครงการที่ทดสอบว่าพืชสามารถเจริญเติบโตได้ในทวีปแอนตาร์กติกา โดยโครงการนี้มุ่งเน้นพัฒนานวัตกรรมการเพาะปลูกพืชที่ใช้บริโภคเป็นอาหาร",
+	REALITY: "คือ การนำเทคโนโลยีมาผสานระหว่างโลกแห่งความเป็นจริงและความเสมือนจริงเข้าด้วยกันด้วยการใช้ระบบซอฟต์แวร์และอุปกรณ์เชื่อมต่อต่างๆ โดยวัตถุเสมือนที่ว่านั้น อาจจะเป็นภาพ วิดีโอ เสียง ข้อมูลต่างๆที่ประมวลผลมาจากคอมพิวเตอร์ หรืออุปกรณ์สวมใส่ขนาดเล็กต่างๆ และทำให้เราสามารถตอบสนองกับสิ่งที่จำลองนั้นได้",
+	MARKERLESS: "คือ ผู้ใช้งานสามารถหยิบจับวัตถุมาวางในโลกจริงได้ ผ่าน Application",
+	ENVIRONMENT: "สิ่งแวดล้อม",
+	ASTROBOTANY: "คือ การศึกษาการตอบสนองของพืชต่อสภาวะแวดล้อมบนยานอวกาศขณะเดินทาง",
+};
+
+function popWord(whatword) {
+    var wordmeaning = meaning[whatword];
+	$('#nongWord').addClass('show');
+	$('#nongWord #word').text(whatword);
+	$('#nongWord #desc').text(wordmeaning);
+}
+
+function closeNongWord() {
+	$('#nongWord').removeClass('show')
 }

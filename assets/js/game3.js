@@ -3,7 +3,7 @@ var click = { "startPos": "", "endPos": "" };
 var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
 			   "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
-var words = [ { "word": "PRESSURE-SUITS", 
+var words = [ { "word": "PRESSURE-SUITS",
                 "direction": "E",
                 "start": 47 },
             { "word": "SPACESUITS", "direction": "SE", "start": 2 },
@@ -12,7 +12,7 @@ var words = [ { "word": "PRESSURE-SUITS",
             { "word": "VACUUM", "direction": "NW", "start": 168 },
             { "word": "CENSOR", "direction": "E", "start": 33 },
 			];
-
+			
 // Prepare the wordsearch with random letters and word layout
 $(document).ready(function() {
 	// grab the size of the grid.  I used this method in case I need to 
@@ -338,7 +338,9 @@ function scratchWord() {
 		if ((click.startPos === words[i].start && click.endPos === words[i].end) ||
 			(click.startPos === words[i].end && click.endPos === words[i].start)) {
 			// little hack here
-			$(".words").find("." + i).addClass("strike");		
+			$(".words").find("." + i).addClass("strike");	
+			
+			popWord(words[i].word)
 		}
 	}
 	// check if the game is over
@@ -353,4 +355,24 @@ function sound() {
 	sound.volume = 0.2;
 	sound.loop = true;
 	sound.play();
+}
+
+var meaning = {
+	"PRESSURE-SUITS": "เครื่องแต่งตัวอัดลมสำหรับบินในระยะสูง",
+	SPACESUITS: "ชุดนักบินอวกาศ",
+	SPACECRAFT: "ยานอวกาศ",
+	ASTRONAUTS: "นักบินอวกาศ",
+	VACUUM: "สุญญากาศ",
+	CENSOR: "ไม่มี",
+};
+
+function popWord(whatword) {
+    var wordmeaning = meaning[whatword];
+	$('#nongWord').addClass('show');
+	$('#nongWord #word').text(whatword);
+	$('#nongWord #desc').text(wordmeaning);
+}
+
+function closeNongWord() {
+	$('#nongWord').removeClass('show')
 }

@@ -11,7 +11,7 @@ var words = [ { "word": "NANOBOT",
                 { "word": "BODY", "direction": "SE", "start": 133 },
                 { "word": "INTELLIGENT", "direction": "E", "start": 2 },
 			];
-
+			
 // Prepare the wordsearch with random letters and word layout
 $(document).ready(function() {
 	// grab the size of the grid.  I used this method in case I need to 
@@ -337,7 +337,9 @@ function scratchWord() {
 		if ((click.startPos === words[i].start && click.endPos === words[i].end) ||
 			(click.startPos === words[i].end && click.endPos === words[i].start)) {
 			// little hack here
-			$(".words").find("." + i).addClass("strike");		
+			$(".words").find("." + i).addClass("strike");
+
+			popWord(words[i].word)
 		}
 	}
 	// check if the game is over
@@ -352,4 +354,24 @@ function sound() {
 	sound.volume = 0.2;
 	sound.loop = true;
 	sound.play();
+}
+
+var meaning = {
+	NANOBOT: "คือ หุ่นยนต์ที่มีขนาดนาโนเมตร โดยที่ในอนาคตอีก 10 ปีข้างหน้า นาโนบอทอาจจะสามารถป้องกันเชื้อโรคที่เข้ามาในตัวเราได้ เเละช่วยอํานวยความสะดวกเราได้มากขึ้น โดยที่นาโนบอทนั้นทําจากส่วนประกอบระดับนาโนหรือโมเลกุล 1 นาโนเมตร ขนาดเป็น 10 เท่าของอะตอมเดี่ยว",
+	TECHNOLOGY: "ไม่มี",
+	ROBOTS: "ไม่มี",
+	NANOTECH: "ตือ วิทยาการในการประกอบและผลิตสิ่งต่างๆ ขึ้นมาจากการจัดเรียงอะตอม  หรือโมเลกุลเข้าด้วยกันในระดับนาโนเมตร",
+	BODY: "ไม่มี",
+	INTELLIGENT: "ไม่มี"
+}
+
+function popWord(whatword) {
+    var wordmeaning = meaning[whatword];
+	$('#nongWord').addClass('show');
+	$('#nongWord #word').text(whatword);
+	$('#nongWord #desc').text(wordmeaning);
+}
+
+function closeNongWord() {
+	$('#nongWord').removeClass('show')
 }

@@ -338,7 +338,9 @@ function scratchWord() {
 		if ((click.startPos === words[i].start && click.endPos === words[i].end) ||
 			(click.startPos === words[i].end && click.endPos === words[i].start)) {
 			// little hack here
-			$(".words").find("." + i).addClass("strike");		
+			$(".words").find("." + i).addClass("strike");
+
+			popWord(words[i].word)
 		}
 	}
 	// check if the game is over
@@ -353,4 +355,24 @@ function sound() {
 	sound.volume = 0.2;
 	sound.loop = true;
 	sound.play();
+}
+
+var meaning = {
+	VEHICLE: "ยานพาหนะ",
+	CURIOSITY: "ชื่อยานสำรวจดาวอังคาร",
+	VIRTUALREALITY: "คือ การจำลองสภาพแวดล้อมจริงเข้าไปให้เสมือนจริง โดยผ่านการรับรู้จากการมองเห็น เสียง สัมผัส แม้กระทั้งกลิ่น",
+	PERSEVERANCE: "ชื่อยานสำรวจดาวอังคาร",
+	EXPLORATION: "การสำรวจ ค้นหา",
+	CONTROL: "ไม่มี",
+};
+
+function popWord(whatword) {
+    var wordmeaning = meaning[whatword];
+	$('#nongWord').addClass('show');
+	$('#nongWord #word').text(whatword);
+	$('#nongWord #desc').text(wordmeaning);
+}
+
+function closeNongWord() {
+	$('#nongWord').removeClass('show')
 }
