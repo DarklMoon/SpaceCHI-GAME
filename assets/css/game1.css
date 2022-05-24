@@ -137,10 +137,13 @@ canvas {
 	border: 0;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px hsl(0, 0%, 50%);
-	color: black;
+	color: white;
 	margin-top: 3rem;
-	padding: 5px 10px;
+	padding: 15px 30px;
 	font-family: "Prompt", sans-serif;
+	position:absolute;
+	bottom: 1rem;
+	transition: .2s;
 }
 .modal-container{
 	background-color: hsl(0, 100%, 100%);
@@ -149,30 +152,42 @@ canvas {
 	justify-content: center;
 	align-items: center;
 	margin: 0;
-	height: 25vh;
-	width: 25vw;
+	height: 23rem;
+	width: 41rem;
 	border-radius: 2rem;
 	pointer-events: none;
 	z-index: -2000;
 	opacity: 0;
+	right:50.3vw;
+	top:12vw;
+	padding: 6rem;
+	transition: 0.2s;
 }
 
 .modal{
 	display: flex;
-	justify-content: center;
+	justify-content: right;
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
 	font-family: "Prompt", sans-serif;
 	max-width: 100%;
+	transition: 0.2s;
 	
 }
-
+.madal-text{
+	position:relative;
+	background: red;
+	width: 2rem;
+	height: 2rem;
+	overflow:hidden;
+	left:10vw;
+}
 .modal-container.show {
 	pointer-events: auto;
 	opacity: 1;
 	z-index: 2000;
-	transition: all 2s;
+	transition: all 1s;
 }
 
 @keyframes vocab {
@@ -188,20 +203,30 @@ canvas {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6px 14px;
+  padding: 15px 30px;
   font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   border-radius: 6px;
   border: none;
-
+  position: absolute;
+  bottom:1rem;
+  font-size: 20px;
   background: #6E6D70;
   box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
   color: #DFDEDF;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  transition: .2s;
+  box-shadow: 0 2px 4px hsl(0, 0%, 50%);
 }
 
 .nongbutton:focus {
-  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1);
   outline: 0;
+}
+.nongbutton:hover{
+	background: #5a595c;
+}
+.modal a:hover{
+	background: #5a595c;
 }

@@ -92,10 +92,10 @@ body {
     animation: box-show 1s ease-in 0s forwards;
 }
 .ontheworld > img.b1w{
-    transform: rotate(40deg);
+    transform: rotate(45deg);
     position: absolute;
-    top: -45px;
-    left: calc(50% + 160px);
+    top: -20px;
+    left: calc(50% + 200px);
 }
 .ontheworld > img.b2w{
     transform: rotate(-40deg);
