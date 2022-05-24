@@ -7,7 +7,7 @@ var words = [ { "word": "CONTROL",
                 "direction": "SW",
                 "start": 20 },//virtual reality
 			  { "word": "CURIOSITY", "direction": "S", "start": 22 },
-			  { "word": "VIRTUALREALITY", "direction": "E", "start": 81 },
+			  { "word": "VIRTUALREALITY", "direction": "E", "start": 82	 },
 			  { "word": "PERSEVERANCE", "direction": "E", "start": 49},
 			  { "word": "EXPLORATION", "direction": "E", "start": 164 },
 			  { "word": "VEHICLE", "direction": "S", "start": 33 },

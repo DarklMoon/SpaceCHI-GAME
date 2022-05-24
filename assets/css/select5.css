@@ -14,13 +14,14 @@ body {
 }
 
 .world {
-    position: relative;
-    transform: rotate(-110deg) translatex(-120px);
-    top:-10rem;
+    transform: rotate(-110deg);
+    /* position: relative; */
+    /* transform: rotate(-110deg) translatex(-120px);
+    top:-10rem; */
 }
 
 .world-absolute {
-    position: absolute;
+    position: absolute; 
     top: 70vh;
     left: calc(50vw - 960px);
 }
@@ -28,10 +29,10 @@ body {
 .rocket {
     transform: translate(810px, calc(70vh - 260px)) rotate(0deg);
     position: absolute;
-    top: -100px;
-
-    left: calc(50vw - 1060px);
-    width: 30rem;
+    top: 2px;
+    
+    left: calc(57vw - 1060px);
+    /* width: 20rem; */
     /* animation: rocketmove 4s 0s linear forwards; */
 }
 
@@ -191,5 +192,67 @@ body {
     }
     100%{
         top:-73vw;
+    }
+}
+
+.box:nth-child(1) {
+    animation: test 3s forwards;
+}
+.box:nth-child(2) {
+    animation: test2 4s 2s forwards;
+}
+.box:nth-child(3) {
+    animation: test3 5s 3s forwards;
+}
+.box:nth-child(4) {
+    animation: test4 5s 4s forwards;
+}
+
+.fade{
+    animation: fade 10s 8s ease-in-out ;
+}
+@keyframes test {
+    0% {
+        transform: translate(0);
+        opacity: 1;
+    } 100% {
+        transform: translate(30em, 25rem);
+        opacity: 0;
+    }
+}
+@keyframes test2 {
+    0% {
+        transform: translate(0);
+        opacity: 1;
+    } 100% {
+        transform: translate(12em, 25rem);
+        opacity: 0;
+    }
+}
+@keyframes test3 {
+    0% {
+        transform: translate(0);
+        opacity: 1;
+    } 100% {
+        transform: translate(-10em, 25rem);
+        opacity: 0;
+    }
+}
+@keyframes test4 {
+    0% {
+        transform: translate(0);
+        opacity: 1;
+    } 100% {
+        transform: translate(-30em, 25rem);
+        opacity: 0;
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
     }
 }

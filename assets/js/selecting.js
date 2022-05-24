@@ -35,6 +35,13 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+function sound() {
+  var sound = new Audio("/sound-design/background/main.mp3");
+  sound.volume = 0.5;
+  sound.loop = true;
+  sound.play();
+} 
+  
 
 var playBtn = document.getElementById('play'),
   resetBtn = document.getElementById('reset'),

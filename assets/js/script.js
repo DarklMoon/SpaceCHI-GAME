@@ -15,17 +15,17 @@ window.onscroll = function (){
 
 function sound() {
 	var sound = new Audio('/sound-design/background/main.mp3');
-	sound.volume = 0.2;
+	sound.volume = 0.5;
 	sound.loop = true;
 	sound.play();
 }
 
-function sound2() {
-	var sound = new Audio('/sound-design/background/Hold-button.mp3');
-	sound.volume = 0.2;
-	sound.loop = true;
-	sound.play();
-}
+// function sound2() {
+// 	var sound = new Audio('/sound-design/background/Hold-button.mp3');
+// 	sound.volume = 0.2;
+// 	sound.loop = true;
+// 	sound.play();
+// }
 
 var playBtn = document.getElementById('play'),
   resetBtn = document.getElementById('reset'),
