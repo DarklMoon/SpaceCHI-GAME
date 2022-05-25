@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
 }
 
 body {
@@ -8,20 +9,35 @@ body {
     overflow: hidden;
     animation: bg 2s alternate infinite;
 }
+
 @keyframes bg {
     from{background-image: url("/assets/image/blackwhite/spacestar.png");}
     to{background-image: url("/assets/image/blackwhite/spacestar3.png");}
 }
 
 .world {
-    position: relative;
+    position: absolute;
     transform: rotate(-110deg) translatex(-120px);
     top:-7rem;
     left:-2.5rem;
+    z-index: 1000;
+}
+#free{
+    position: relative;
+    top: 70vh;
+    left: calc(50vw - 960px);
+}
+.world2 {
+    position: absolute;
+    transform: rotate(-110deg) translatex(-120px);
+    width: 2rem;
+    top:-7rem;
+    left:-2.5rem;
+    z-index: 2000;
 }
 
 .world-absolute {
-    position: absolute;
+    position: relative;
     top: 70vh;
     left: calc(50vw - 960px);
 }
@@ -85,6 +101,7 @@ body {
     top: calc(50% - 50px);
     left: calc(50% - 50px);
 }
+
 
 .ontheworld{
     position: absolute;
@@ -200,19 +217,47 @@ body {
 }
 
 .box:nth-child(1) {
-    animation: test 3s forwards;
+    animation: fadeDown 6s forwards;
 }
 .box:nth-child(2) {
-    animation: test2 4s 2s forwards;
+    animation: fadeDown2 4s 5s forwards;
 }
 .box:nth-child(3) {
-    animation: test3 5s 3s forwards;
+    animation: fadeDown3 5s 10s forwards;
 }
 .box:nth-child(4) {
-    animation: test4 5s 4s forwards;
+    animation: fadeDown4 5s 13s forwards;
 }
 
-@keyframes test {
+#b1{
+    opacity: 0;
+    animation: appear 3s 2s forwards;
+}
+
+#b2{
+    opacity: 0;
+    animation: appear 3s 7s forwards;
+}
+
+#b3{
+    opacity: 0;
+    animation: appear 3s 11s forwards;
+}
+
+#b4{
+    opacity: 0;
+    animation: appear 3s 14s forwards;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeDown {
     0% {
         transform: translate(0);
         opacity: 1;
@@ -221,7 +266,8 @@ body {
         opacity: 0;
     }
 }
-@keyframes test2 {
+
+@keyframes fadeDown2 {
     0% {
         transform: translate(0);
         opacity: 1;
@@ -230,7 +276,8 @@ body {
         opacity: 0;
     }
 }
-@keyframes test3 {
+
+@keyframes fadeDown3 {
     0% {
         transform: translate(0);
         opacity: 1;
@@ -239,7 +286,8 @@ body {
         opacity: 0;
     }
 }
-@keyframes test4 {
+
+@keyframes fadeDown4 {
     0% {
         transform: translate(0);
         opacity: 1;
@@ -253,7 +301,18 @@ body {
     0%{
         opacity: 0;
     }
-    100%{
-        opacity: 100;
+        100%{
+            opacity: 1;
     }
 }
+
+.rockcolor{
+    position: absolute;
+    left: calc(43.5vw - 960px);
+    top: -5.5rem;
+    width: 30rem;
+    opacity: 0;
+
+    animation: appear 5s 15s forwards;
+}
+

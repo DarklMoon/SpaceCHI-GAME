@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
-    <title>Loading</title>
+    <title>SEARCH-CHI</title>
     <link ref="stylesheet" href="/assets/css/loading1.css">
     <style>
+      *{
+            text-decoration: none;
+      }
       body{
     width: 100vw;
     height: 100vh;
@@ -17,6 +20,7 @@
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 img{
@@ -54,17 +58,18 @@ img{
     justify-content: center;
     align-items: center;
     top: 250px;
-    font-size: 20px;
+    font-size: 2rem;
     font-family: "Prompt", sans-serif;
     padding: 0 14em;
+    margin-bottom: 20rem;
     text-align: center;
 }
 
 .go{
-    position: relative;
+    position: absolute;
     font-size: 50px;
-    top:450px;
-    left: 1650px;
+    bottom: 0;
+    right: 2rem;
     animation: button 2s infinite;
 }
 
@@ -79,6 +84,7 @@ img{
         opacity: 1;
     }
 }
+  @keyframes fade{}
     </style>
 </head>
 
@@ -89,7 +95,7 @@ img{
     </div>
     
     
-    <div class="go" onclick="fadeOutEffect('container', 0.2)">
+    <a href="endgame.html" class="go" onclick="fadeOutEffect('container', 0.2)">
         continue
         <svg
           fill="white"
@@ -107,8 +113,9 @@ img{
             fill-rule="nonzero"
           />
         </svg>
-      </div>
+      </a>
     </div>
+
     <script>
       const rocket = document.getElementById("container");
   function fadeOutEffect(id, time) {
