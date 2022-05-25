@@ -88,7 +88,7 @@ img{
     </style>
 </head>
 
-<body>
+<body onload="sound()">
     <img src="/assets/image/colour/roc3.png" alt="Paris" width="300" height="300">
     <div class = "under">
         <p id = "demo"></p>
@@ -117,6 +117,14 @@ img{
     </div>
 
     <script>
+
+function sound() {
+	        var sound = new Audio('/sound-design/background/game3.mp3');
+	        sound.volume = 0.2;
+	        sound.loop = true;
+	        sound.play();
+}
+
       const rocket = document.getElementById("container");
   function fadeOutEffect(id, time) {
     target = document.getElementById(id);
@@ -140,7 +148,7 @@ img{
   
   var i = 0;
   var txt =
-    "ยินดีด้วย คุณได้ปลดล็อคเทคโนโลยีครบหมดแล้ว คุณสามารถดำรงชีวิตอยุ่บนดาวอังคารได้อย่างปลอดภัยแต่นอกเนื้อจากเทคโนโลยีที่ได้ปลดล็อคมา ยังมีเทคโนโลยีอื่นๆนอกจากนี้ ที่มีการปฎิสัมพันธ์ระหว่างคอมพิวเตอร์ กับมนุษย์";
+    "ยินดีด้วย คุณได้ปลดล็อคเทคโนโลยีครบหมดแล้ว คุณสามารถดำรงชีวิตอยุ่บนดาวอังคารได้อย่างปลอดภัย แต่นอกเนื้อจากเทคโนโลยีที่ได้ปลดล็อคมาเหล่านี้แล้ว ยังมีเทคโนโลยีอื่นๆนอกจากนี้ ที่มีการปฎิสัมพันธ์ระหว่างคอมพิวเตอร์ กับมนุษย์อีกมาก";
   var speed = 50;
   
   window.onload = typeWriter;
@@ -152,6 +160,8 @@ img{
       setTimeout(typeWriter, speed);
     }
   }
+
+  
   </script>
 </body>
 </html>

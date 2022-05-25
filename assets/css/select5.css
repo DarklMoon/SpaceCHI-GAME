@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-
+    text-decoration: none;
 }
 
 body {
@@ -8,6 +8,8 @@ body {
     background-image: url("/assets/image/blackwhite/spacestar.png");
     overflow: hidden;
     animation: bg 2s alternate infinite;
+    width: 100vw;
+    height: 100vh;
 }
 
 @keyframes bg {
@@ -15,29 +17,17 @@ body {
     to{background-image: url("/assets/image/blackwhite/spacestar3.png");}
 }
 
-.world {
+/* .world {
     position: absolute;
     transform: rotate(-110deg) translatex(-120px);
     top:-7rem;
     left:-2.5rem;
     z-index: 1000;
-}
-#free{
-    position: relative;
-    top: 70vh;
-    left: calc(50vw - 960px);
-}
-.world2 {
-    position: absolute;
-    transform: rotate(-110deg) translatex(-120px);
-    width: 2rem;
-    top:-7rem;
-    left:-2.5rem;
-    z-index: 2000;
-}
+} */
+
 
 .world-absolute {
-    position: relative;
+    position: absolute;
     top: 70vh;
     left: calc(50vw - 960px);
 }
@@ -306,6 +296,20 @@ body {
     }
 }
 
+#rocket1{
+    opacity: 1;
+    animation: fadeout 2s 16s forwards;
+}
+
+@keyframes fadeout {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 .rockcolor{
     position: absolute;
     left: calc(43.5vw - 960px);
@@ -313,6 +317,40 @@ body {
     width: 30rem;
     opacity: 0;
 
-    animation: appear 5s 15s forwards;
+    animation: appear 5s 17s forwards;
 }
 
+.clickhere{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: calc(50vw - 200px);
+    top: calc(35vh - 100px);
+    width: 400px;
+    height: 200px;
+    background-color: #d65555;
+    font-size: 3rem;
+    font-family: "Prompt", sans-serif;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fade 2s 17s forwards;
+    transition: all .5s;
+}
+
+#goToEnd{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 180px;
+    background-color: hsla(0, 0%, 100%, 1);
+    color: black;
+    transition: all .5s;
+}
+
+#goToEnd:hover{
+    font-size: 5rem;
+    text-shadow: 5px 5px #fec87c;
+}

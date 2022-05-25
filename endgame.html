@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEARCH-CHI</title>
     <link rel="stylesheet" href="/assets/css/endgame.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="sound()">
     <div class="container">
         <div class="rocklauch">
             <img src="/assets/image/colour/roc3.png" alt="rocket-lauch" class="lauch">
@@ -16,10 +19,32 @@
         <div class="header">
             <h1>THE END</h1>
         </div>
-        <div class="header">
-            <h1>THE END</h1>
+        <div class="header" id="readmore">
+            <h1>SCROLL DOWN TO READ MORE</h1>
         </div>
     </div>
+    <div data-aos="fade-down" class="ar">
+        <div class="left">        
+            <img src="/assets/image/colour/b1.png" alt="ar" class="pic-ar">
+        </div>
 
+        <div class="right">
+            <h2>สวนปลูกผัก</h2>
+            <br>
+            <p> สวนปลูกผักเป็นพื้นที่ที่สําคัญในการเอาชีวิตรอดบนดวงดาว เพราะสวนปลูกผักจะทำการผลิตออกซิเจน และผลิตอาหารเพื่อให้มนุษย์อยู่รอดได้ โดยเทคโนโลยีที่ใช้จะเป็นระบบ AR ในการดูเเลผัก เพื่อลดเวลาการไปดูเเลของนักบิน  โดยนักบินอวกาศจะใส่ หรือกดคําสั่งที่ AR มีให้เเล้วจากนั้น AR ก็จะทํางานตามคําสั่งที่นักบินป้อน หรือใส่มาให้</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+
+        AOS.init();
+
+        function sound() {
+	var sound = new Audio('/sound-design/background/main.mp3');
+	sound.volume = 0.8;
+	sound.loop = true;
+	sound.play();
+        }
+    </script>
 </body>
 </html>

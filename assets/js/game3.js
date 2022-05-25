@@ -309,7 +309,7 @@ function isEndOfGame(){
 }
 
 function sound() {
-	var sound = new Audio('/sound-design/background/game.mp3');
+	var sound = new Audio('/sound-design/background/game2.mp3');
 	sound.volume = 0.3;
 	sound.loop = true;
 	sound.play();

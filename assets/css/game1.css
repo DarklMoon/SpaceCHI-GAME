@@ -8,12 +8,15 @@ body {
 	position: relative;
     background-color: #141414;
     background-image: url("https://cdn.discordapp.com/attachments/958007561242685450/977855903275577364/spacestar.png");
-
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+	animation: bg 2s alternate infinite;
 }
-
+@keyframes bg {
+    from{background-image: url("/assets/image/blackwhite/spacestar.png");}
+    to{background-image: url("/assets/image/blackwhite/spacestar3.png");}
+}
 #main{	
 	position: relative;
 	display: block;

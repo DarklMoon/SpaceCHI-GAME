@@ -89,7 +89,14 @@
     <script>
       AOS.init();    
     </script>
-    <script src="assets/js/script.js"> </script>
+    <script src="assets/js/script.js">
+        function sound() {
+	var sound = new Audio('/sound-design/background/main.mp3');
+	sound.volume = 0.5;
+	sound.loop = true;
+	sound.play();
+}
+    </script>
 </body>
 
 </html>

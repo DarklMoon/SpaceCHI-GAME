@@ -5,8 +5,7 @@
     <title>SEARCH-CHI</title>
     <link rel="stylesheet" href="/assets/css/select5.css">
 </head>
-
-<div>
+<body onload="sound()"">
     <!-- <div class="fade"> -->
         <div class="world-absolute">
             <img class="world" src="/assets/image/blackwhite/w4.png" width="1920" height="1080">
@@ -24,9 +23,9 @@
             </div>
         </div>
         <div class="color-on-top"><img class="c1" src="/assets/image/colour/color1s.png"><img class="c2" src="/assets/image/colour/color2s.png"><img class="c3" src="/assets/image/colour/color3s.png"><img class="c4"src="/assets/image/colour/color4s.png"></div>
-        <div class="container-rocket">
-            <img class="rocket" id="rocket-1" src="/assets/image/blackwhite/roc2_1.png" width="300">
-        </div>
+            <div class="container-rocket">
+                <img class="rocket" id="rocket1" src="/assets/image/blackwhite/roc2_1.png" width="300">
+            </div>
             <img class="rocket rockcolor" id="rocket-1" src="/assets/image/colour/roc3.png" width="300">
         </div>
         <audio id="hov" src="/sound-design/button-sound/Hold-button.mp3" preload="auto">
@@ -48,9 +47,13 @@
                 <!-- <img class="lock" src="t0.png" width="100" height="100"> -->
             </div>
         </div>
-        <div id="free">
-        <img class="world2" src="/assets/image/colour/w5b.png" width="1920" height="1080">
+        <div class="clickhere">
+            <a href="/loading.html" id="goToEnd">
+                <h6>CLICK HERE</h6> </a>
         </div>
+        <!-- <div id="free">
+        <img class="world2" src="/assets/image/colour/w5b.png" width="1920" height="1080">
+        </div> -->
     <!-- </div> -->
     <!-- <script>
         // const show = document.getElementById("show");
@@ -60,7 +63,19 @@
         // }, 7000)
 
     </script> -->
-    <!-- <script src="/assets/js/selecting.js"></script> -->
+    <script>
+        function sound() {
+	        var sound = new Audio('/sound-design/background/game3.mp3');
+	        sound.volume = 0.2;
+	        sound.loop = true;
+	        sound.play();
+}
+        // const myTimeout = setTimeout(changeImg, 15000);
+        
+        // function changeImg(){
+        // document.getElementById("rocket-1").src="/assets/image/colour/roc3.png";
+        // }
+    </script>
 </body>
 
 </html>
