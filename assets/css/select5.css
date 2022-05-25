@@ -7,9 +7,9 @@ body {
     background-color: #141414;
     background-image: url("/assets/image/blackwhite/spacestar.png");
     overflow: hidden;
-    animation: bg 2s alternate infinite;
     width: 100vw;
     height: 100vh;
+    animation: bg 2s alternate infinite;
 }
 
 @keyframes bg {
@@ -335,7 +335,7 @@ body {
     border-radius: 10px;
     opacity: 0;
     animation: fade 2s 17s forwards;
-    transition: all .5s;
+    transition: all .2s;
 }
 
 #goToEnd{
@@ -347,7 +347,7 @@ body {
     height: 180px;
     background-color: hsla(0, 0%, 100%, 1);
     color: black;
-    transition: all .5s;
+    transition: all .2s;
 }
 
 #goToEnd:hover{
