@@ -19,10 +19,7 @@ body {
 
 /* .world {
     position: absolute;
-    transform: rotate(-110deg) translatex(-120px);
-    top:-7rem;
-    left:-2.5rem;
-    z-index: 1000;
+    
 } */
 
 
@@ -312,7 +309,7 @@ body {
 
 .rockcolor{
     position: absolute;
-    left: calc(43.5vw - 960px);
+    left: calc(45.5vw - 930px);
     top: -5.5rem;
     width: 30rem;
     opacity: 0;
