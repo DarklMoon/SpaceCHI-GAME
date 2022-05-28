@@ -210,3 +210,86 @@ align-items:center;
     margin-top: 40rem;
 
 }
+
+footer {
+    position: relative;
+    text-align: left;
+    background-color: hsl(0,0%, 30%);
+    z-index: 20;
+    margin: auto;
+    padding: 33px;
+    height: 220px;
+    width: 100vw;
+}
+
+.footText {
+    position: relative;
+    top: 16%;
+    left: 10%;
+    font-size: 15px;
+    color: white;
+}
+
+.footerName1 {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 64%;
+    font-size: 18px;
+    color: white;
+}
+
+.footerName2 {
+    position: absolute;
+    text-align: center;
+    top: 33%;
+    left: 84%;
+    font-size: 18px;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    background-color: transparent;
+    height: 50px;
+    width: 500px;
+    left: 10%;
+    top: 10%;
+}
+
+.itLogo {
+    position: absolute;
+    background-image: url("https://cdn.discordapp.com/attachments/929732614338781204/977852671316877352/unknown.png");
+    height: 520px;
+    width: 550px;
+    z-index: 21;
+    top: 0;
+    background-repeat: no-repeat;
+    transform: scale(0.1);
+    top: -470%;
+    left: -45%;
+}
+
+.spaceLogo {
+    position: absolute;
+    background-image: url("https://media.discordapp.net/attachments/929732614338781204/977852671564316722/logo.png");
+    filter: brightness(0%);
+    height: 600px;
+    width: 2000px;
+    z-index: 21;
+    top: 0;
+    background-repeat: no-repeat;
+    transform: scale(0.1);
+    top: -560%;
+    left: -165%;
+}
+
+.footerLine {
+    position: absolute;
+    background-color: hsl(40, 100%, 20%);
+    height: 130px;
+    width: 3px;
+    border-radius: 10px;
+    top: 0%;
+    left: 50%;
+}
